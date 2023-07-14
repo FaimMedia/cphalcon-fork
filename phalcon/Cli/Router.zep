@@ -15,6 +15,7 @@ use Phalcon\Di\AbstractInjectionAware;
 use Phalcon\Cli\Router\Route;
 use Phalcon\Cli\Router\Exception;
 use Phalcon\Cli\Router\RouteInterface;
+use Phalcon\Cli\Router\RouterInterface;
 
 /**
  * Phalcon\Cli\Router is the standard framework router. Routing is the process
@@ -36,7 +37,7 @@ use Phalcon\Cli\Router\RouteInterface;
  * echo $router->getTaskName();
  *```
  */
-class Router extends AbstractInjectionAware
+class Router extends AbstractInjectionAware implements RouterInterface
 {
     /**
      * @var string
